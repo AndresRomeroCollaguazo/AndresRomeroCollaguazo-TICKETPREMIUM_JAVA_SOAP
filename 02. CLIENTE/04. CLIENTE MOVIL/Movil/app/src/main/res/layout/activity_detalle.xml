@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAtrasDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="60px"
+            android:backgroundTint="#A50D0D"
+            android:text="Atrás" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMACIÓN DE COMPRA"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="50px"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/compra" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_marginTop="60px" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="260px">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Subtotal"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textSize="45px"
+                android:background="@color/grey"/>
+            <TextView
+                android:text="IVA 12%"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textSize="45px"
+                android:background="@color/grey"/>
+            <TextView
+                android:text="Total"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textSize="45px"
+                android:background="@color/grey"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtSubtotal"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="0"
+                android:padding="3dip"
+                android:textSize="40px"
+                android:background="@color/grey"/>
+            <TextView
+                android:id="@+id/txtIva"
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip"
+                android:textSize="40px"
+                android:background="@color/grey"/>
+            <TextView
+                android:id="@+id/txtTotal"
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip"
+                android:textSize="40px"
+                android:background="@color/grey"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConsumidorFinal"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1"
+            android:backgroundTint="#FFC107"
+            android:text="Consumidor Final" />
+
+        <Button
+            android:id="@+id/btnFactura"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:backgroundTint="#FFC107"
+            android:text="Factura con Datos" />
+    </LinearLayout>
+
+</LinearLayout>

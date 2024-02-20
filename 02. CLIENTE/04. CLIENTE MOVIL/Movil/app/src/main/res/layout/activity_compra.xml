@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAtrasCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:backgroundTint="#CA1212"
+            android:text="Atrás" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:text="SELECCIÓN DE PARTIDOS" />
+
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:id="@+id/spnPartidos"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="60px"
+        android:background="@color/grey" />
+
+    <Button
+        android:id="@+id/btnEscoger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="410px"
+        android:layout_marginTop="30px"
+        android:backgroundTint="#FFC107"
+        android:text="Escoger" />
+
+    <TextView
+        android:id="@+id/txtEstadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estadio:"
+        android:textSize="40px"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="30px"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="Localidades:" />
+
+    <ListView
+        android:id="@+id/lstPartidos"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:layout_marginTop="60px"
+        android:layout_marginBottom="70px" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="400px"
+        android:backgroundTint="#FFC107"
+        android:text="Agregar" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="123dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="700px"
+        android:backgroundTint="#4CAF50"
+        android:text="Comprar" />
+
+
+
+</LinearLayout>

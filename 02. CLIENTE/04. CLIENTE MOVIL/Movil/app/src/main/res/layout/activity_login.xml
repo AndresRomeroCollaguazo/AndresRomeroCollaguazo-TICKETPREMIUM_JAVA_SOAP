@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Imagen del monster -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="215dp"
+        android:layout_marginLeft="100px"
+        app:srcCompat="@drawable/fondoincio" />
+
+    <!-- Imagen del logo -->
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ticket Premium Ecuador"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Grupo #3 Andrango - Cantuña - Romero"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="212dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="250px"
+        android:layout_marginTop="120px"
+        android:hint="Usuario" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginLeft="250px"
+        android:layout_marginTop="60px"
+        android:hint="Contraseña" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="60px"
+        android:backgroundTint="#FFC107"
+        android:text="Iniciar sesión" />
+
+    <Button
+        android:id="@+id/btnIrRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370px"
+        android:layout_marginTop="60px"
+        android:backgroundTint="#FFFFFF"
+        android:text="Registrarse" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/txtEntradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la localidad que desees:"
+        android:layout_marginLeft="120px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spnLocalidades"
+            android:layout_width="203dp"
+            android:layout_height="43dp"
+            android:background="@color/grey" />
+
+        <Button
+            android:id="@+id/btnEscogerLocalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="Escoger" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDisponible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disponible:" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio por unidad:" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="Aceptar" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/txtEntradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATOS PERSONALES PARA LA FACTURA"
+        android:layout_marginLeft="150px"/>
+
+    <TextView
+        android:id="@+id/txtTaxNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre y Apellido:"
+        android:layout_marginTop="30px"/>
+
+    <EditText
+        android:id="@+id/txtNombreFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/txtTaxCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cédula: "
+        android:layout_marginTop="30px"/>
+
+    <EditText
+        android:id="@+id/txtCedulaFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección: "
+        android:layout_marginTop="30px"/>
+
+    <EditText
+        android:id="@+id/txtDireccionFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnComprarConFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:backgroundTint="#8BC34A"
+        android:text="Aceptar y Comprar" />
+
+</LinearLayout>

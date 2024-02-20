@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3.payara-p5 (2.4.3.payara-maintenance-5307578; 2021-04-22T12:36:46+0100) JAXWS-RI/2.3.2.payara-p4 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://ws.monster.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.monster.edu.ec/">
+
+<xs:element name="comprobarUsuario" type="tns:comprobarUsuario"/>
+
+<xs:element name="comprobarUsuarioResponse" type="tns:comprobarUsuarioResponse"/>
+
+<xs:element name="registroCompra" type="tns:registroCompra"/>
+
+<xs:element name="registroUsuario" type="tns:registroUsuario"/>
+
+<xs:element name="ticket" type="tns:ticket"/>
+
+<xs:element name="traerCliente" type="tns:traerCliente"/>
+
+<xs:element name="traerClienteResponse" type="tns:traerClienteResponse"/>
+
+<xs:element name="traerLocalidades" type="tns:traerLocalidades"/>
+
+<xs:element name="traerLocalidadesResponse" type="tns:traerLocalidadesResponse"/>
+
+<xs:element name="traerPartidos" type="tns:traerPartidos"/>
+
+<xs:element name="traerPartidosResponse" type="tns:traerPartidosResponse"/>
+
+<xs:element name="traerReporte" type="tns:traerReporte"/>
+
+<xs:element name="traerReporteResponse" type="tns:traerReporteResponse"/>
+
+<xs:complexType name="registroUsuario">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="nombres" type="xs:string" minOccurs="0"/>
+<xs:element name="apellidos" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traerCliente">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traerClienteResponse">
+<xs:sequence>
+<xs:element name="reporte" type="tns:cliente" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cliente">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="contrasena" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traerPartidos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="traerPartidosResponse">
+<xs:sequence>
+<xs:element name="partidos" type="tns:ticket" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ticket">
+<xs:sequence>
+<xs:element name="codigoPartido" type="xs:int"/>
+<xs:element name="equipoLocal" type="xs:string" minOccurs="0"/>
+<xs:element name="equipoVisita" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaPartido" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="horaPartido" type="xs:string" minOccurs="0"/>
+<xs:element name="nombreEstadio" type="xs:string" minOccurs="0"/>
+<xs:element name="nombrePartido" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registroCompra">
+<xs:sequence>
+<xs:element name="nombreCliente" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="cantPalco" type="xs:int"/>
+<xs:element name="cantTribuna" type="xs:int"/>
+<xs:element name="cantGeneral" type="xs:int"/>
+<xs:element name="cantGeneralVisita" type="xs:int"/>
+<xs:element name="totalPrecio" type="xs:double"/>
+<xs:element name="codigoPartido" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traerReporte">
+<xs:sequence>
+<xs:element name="codigoPartido" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traerReporteResponse">
+<xs:sequence>
+<xs:element name="reporte" type="tns:factura" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="factura">
+<xs:sequence>
+<xs:element name="cantGeneral" type="xs:int"/>
+<xs:element name="cantGeneralVisita" type="xs:int"/>
+<xs:element name="cantPalco" type="xs:int"/>
+<xs:element name="cantTribuna" type="xs:int"/>
+<xs:element name="precioTotal" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="comprobarUsuario">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="comprobarUsuarioResponse">
+<xs:sequence>
+<xs:element name="comprobar" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traerLocalidades">
+<xs:sequence>
+<xs:element name="codigoPartido" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traerLocalidadesResponse">
+<xs:sequence>
+<xs:element name="localidades" type="tns:localidad" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="localidad">
+<xs:sequence>
+<xs:element name="codigoLocalidad" type="xs:int"/>
+<xs:element name="disponibilidadLocalidad" type="xs:int"/>
+<xs:element name="nombreLocalidad" type="xs:string" minOccurs="0"/>
+<xs:element name="precioLocalidad" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

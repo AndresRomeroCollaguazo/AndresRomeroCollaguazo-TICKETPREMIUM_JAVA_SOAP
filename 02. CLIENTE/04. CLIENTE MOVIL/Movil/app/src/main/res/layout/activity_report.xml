@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORTE DE PARTIDOS"
+        android:layout_marginLeft="350px"
+        android:layout_marginTop="60px"/>
+
+    <Spinner
+        android:id="@+id/spnPartidosDisponibles"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="60px"
+        android:background="@color/grey"/>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="400px"
+        android:backgroundTint="#8BC34A"
+        android:text="Buscar" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="150px"
+        android:gravity="center">
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Localidad"
+                android:textSize="45px" />
+
+            <TextView
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Vendido"
+                android:textSize="45px" />
+
+            <TextView
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Recaudado"
+                android:textSize="45px" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtLocalidadNombre"
+                android:layout_column="1"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="---"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/txtVendidos"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="0"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/txtRecaudado"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="0"
+                android:textSize="40px" />
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btnAtrasReporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="120px"
+        android:backgroundTint="#C11313"
+        android:text="Atrás" />
+
+    <Button
+        android:id="@+id/btnDescargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Descargar" />
+
+
+</LinearLayout>

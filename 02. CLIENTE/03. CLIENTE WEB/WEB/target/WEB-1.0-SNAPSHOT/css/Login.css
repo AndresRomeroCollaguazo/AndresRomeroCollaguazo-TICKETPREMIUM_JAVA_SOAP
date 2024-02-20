@@ -1,0 +1,70 @@
+﻿.login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.login-form-1 {
+    padding: 0;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    color: #333;
+}
+
+.login-form-2 {
+    padding: 5%;
+    background: #4DB5C2;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-2 h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.login-container form {
+    padding: 6%;
+}
+
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+
+.login-form-2 .btnSubmit {
+    font-weight: 600;
+    color: #4DB5C2;
+    background-color: #fff;
+}
+
+.login-form-2 .ForgetPwd {
+    color: #4DB5C2;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-form-2 .ForgetPwd:hover {
+    color: lightgray;
+}
+
+.imagen-login > img {
+    margin-left: 1rem;
+    width: 130%;
+    height: 130%;
+}
+#registro {
+    margin-bottom:-2rem;
+}
+
+.imagenHBoo {
+    margin-top: 11rem;
+    margin-left: 2rem;
+    width: 90%;
+    height: 90%;
+}
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Factura"
+        android:layout_marginLeft="330px"
+        android:textSize="60px"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="50px"/>
+
+    <TextView
+        android:id="@+id/txtNombreDialogFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cédula"
+        android:textSize="50px"/>
+
+    <TextView
+        android:id="@+id/txtCedulaDialogFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección:"
+        android:textSize="50px"/>
+
+    <TextView
+        android:id="@+id/txtDireccionDialogFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:gravity="center">
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Localidad"
+                android:textSize="45px" />
+
+            <TextView
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Cantidad"
+                android:textSize="45px" />
+
+            <TextView
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Valor U."
+                android:textSize="45px" />
+
+            <TextView
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Total"
+                android:textSize="45px" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtLocalidadNombreDialogFactura"
+                android:layout_column="1"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="---"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/txtCantidadDialogFactura"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="0"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/txtValorUnitarioDialogFactura"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="0"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/txtValorTotalDialogFactura"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="0"
+                android:textSize="40px" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="150px">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Subtotal"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textSize="45px"
+                android:background="@color/grey"/>
+            <TextView
+                android:text="IVA 12%"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textSize="45px"
+                android:background="@color/grey"/>
+            <TextView
+                android:text="Total"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textSize="45px"
+                android:background="@color/grey"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txtSubtotalDialogFactura"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="0"
+                android:padding="3dip"
+                android:textSize="40px"
+                android:background="@color/grey"/>
+            <TextView
+                android:id="@+id/txtIvaDialogFactura"
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip"
+                android:textSize="40px"
+                android:background="@color/grey"/>
+            <TextView
+                android:id="@+id/txtTotalDialogFactura"
+                android:text="0"
+                android:gravity="center"
+                android:padding="3dip"
+                android:textSize="40px"
+                android:background="@color/grey"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:backgroundTint="#C51414"
+        android:text="Salir" />
+</LinearLayout>
